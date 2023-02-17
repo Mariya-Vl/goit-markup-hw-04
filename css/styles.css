@@ -402,6 +402,7 @@ img {
 }
 .footer-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
+  outline: none;
 }
 
 /* -----------------PORTFOLIO----------------- */
@@ -430,6 +431,7 @@ img {
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 .portfolio-section {
@@ -449,25 +451,30 @@ img {
   gap: 24px;
   row-gap: 48px;
 }
-
-.portfolio-list-item {
-  width: 360px;
-}
 .portfolio-list-item-div {
   width: 360px;
   border: 1px solid var(--decor-color);
   border-top: none;
   padding: 32px 0 32px 16px;
 }
-.portfolio-list-item:hover > .portfolio-list-item-div,
-.portfolio-list-item:focus > .portfolio-list-item-div {
-  border-color: transparent;
-}
-.portfolio-list-item:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .subtitle-portfolio {
   margin: 0 0 8px;
+}
+
+.portfolio-link {
+  display: inline-block;
+  cursor: pointer;
+}
+.portfolio-link:hover > .portfolio-list-item-div,
+.portfolio-link:focus > .portfolio-list-item-div {
+  border-color: transparent;
+}
+.portfolio-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
